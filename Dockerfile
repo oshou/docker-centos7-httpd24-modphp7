@@ -51,7 +51,7 @@ RUN chmod -R 755 /var/www && chown -R www-data:www-data /var/www
 
 # PHP setting
 COPY ./conf/php.ini /etc/php.ini
-COPY ./data/www/html/info.php /var/www/html/
+COPY ./conf/init/info.php /var/www/html/
 
 
 # Listen port
