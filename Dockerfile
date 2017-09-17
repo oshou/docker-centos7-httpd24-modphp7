@@ -35,7 +35,7 @@ RUN yum install -y --enablerepo=epel,remi-php70 \
         php-mysql \
         php-pdo \
         php-xml \
-        php-pecl-apcu.x86_64 \
+        php-pecl-apcu \
         php-pecl-zendopcache
 
 # Cache cleaning
