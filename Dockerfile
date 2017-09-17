@@ -46,7 +46,7 @@ RUN groupadd --gid 1000 www-data && useradd www-data --uid 1000 --gid 1000
 
 # Httpd setting(mod_php)
 COPY ./conf/httpd.conf /etc/httpd/conf/httpd.conf
-COPY ./conf/00-mpm.conf /etc/httpd/conf.module.d/00-mpm.conf
+COPY ./conf/00-mpm.conf /etc/httpd/conf.modules.d/00-mpm.conf
 RUN chmod -R 755 /var/www && chown -R www-data:www-data /var/www
 
 # PHP setting
@@ -59,4 +59,4 @@ EXPOSE 80
 EXPOSE 443
 
 # Startup
-CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+ENTRYPOINT {"/usr/sbin/httpd","-DFOREGROUND"}
