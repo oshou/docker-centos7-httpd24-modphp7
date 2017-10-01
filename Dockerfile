@@ -34,7 +34,7 @@ RUN yum install -y \
         php-pdo \
         php-xml \
         php-pecl-apcu \
-        php-pecl-zendopcache
+        php-pecl-zendopcache && \
     # cache cleaning
     yum clean all
 
