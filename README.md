@@ -1,4 +1,4 @@
-# docker-centos7-httpd24
+# docker-centos7-httpd24-modphp7
 
 # 設定内容
 - ロケール設定
